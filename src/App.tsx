@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { SkylinkdShopIndex } from './pages/skylinkd-shop-index'
+import GlobalStyle from './style/style'
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duração da animação em ms
+      offset: 120, // distância em px para iniciar a animação
+      once: true, // anima apenas uma vez ao rolar
+      easing: 'ease-out' // curva de animação
+    })
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <GlobalStyle />
+      <SkylinkdShopIndex />
+    </>
+  )
 }
 
-export default App;
+export default App
