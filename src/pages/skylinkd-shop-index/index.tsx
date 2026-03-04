@@ -1,6 +1,7 @@
 import HeaderComponent from '../../components/header'
-import { MainSectionComponent } from '../../components/main-section'
-import { ProductsSection } from '../../components/Products-section'
+import { MainSectionComponent } from '../../components/skylinkd-shop-page/main-section'
+import { ProductsSection } from '../../components/skylinkd-shop-page/Products-section'
+import { ContactSection } from '../../components/skylinkd-shop-page/contact-section'
 
 export const SkylinkdShopIndex = () => {
   return (
@@ -8,6 +9,7 @@ export const SkylinkdShopIndex = () => {
       <HeaderComponent />
       <MainSectionComponent />
       <ProductsSection />
+      <ContactSection />
     </>
   )
 }

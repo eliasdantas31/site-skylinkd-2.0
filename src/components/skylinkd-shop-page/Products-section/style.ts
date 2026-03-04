@@ -1,10 +1,10 @@
 import { styled } from 'styled-components'
-import { colors as color, fonts as font } from '../../style/variable'
+import { colors as color, fonts as font } from '../../../style/variable'
 
 export const ProductsSectionContainer = styled.section`
   height: 100vh;
   width: 100%;
-  padding: 5rem 10rem;
+  padding: 5rem 5rem;
   background-color: ${color.grayLight};
 `
 
@@ -145,10 +145,9 @@ export const SearchByGroup = styled.div`
 
       img {
         position: absolute;
-        /* Imagem no canto inferior direito para equilibrar com o texto */
         right: -10px;
         bottom: -10px;
-        height: 100%; // Ajuste para 100% ou 110% dependendo da sua imagem
+        height: 100%;
         width: auto;
         object-fit: contain;
         z-index: 1;
