@@ -117,7 +117,7 @@ export const SearchContainer = styled.div`
   background-color: ${color.grayLight};
   padding: 8px 16px;
   border-radius: 22px;
-  width: 800px;
+  width: 40%;
 
   label {
     cursor: pointer;

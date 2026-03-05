@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { colors as color, fonts as font } from '../../style/variable'
+import { colors as color, fonts as font } from '../../../style/variable'
 
 export const MainSectionContainer = styled.section`
   height: 100vh;
@@ -25,11 +25,11 @@ export const MainSectionText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
   h1 {
     font-family: ${font.family.primary};
     font-weight: ${font.weight.black};
-    font-size: 4.4rem;
+    font-size: 3.8rem;
     color: ${color.grayDark};
     cursor: default;
   }
@@ -44,7 +44,7 @@ export const MainSectionText = styled.div`
 
   a {
     height: 50px;
-    width: 225px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
