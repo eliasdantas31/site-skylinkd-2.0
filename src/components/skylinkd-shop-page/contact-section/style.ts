@@ -1,14 +1,45 @@
 import { styled } from 'styled-components'
 import { colors as color, fonts as font } from '../../../style/variable'
 
-export const ContactSectionContainer = styled.section`
-  height: 100vh;
-  width: 100%;
-  padding: 5rem 5rem;
-  background-color: ${color.grayLight};
-`
-
 export const Contact = styled.div`
+  height: max-content;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-family: ${font.family.secondary};
   background-color: ${color.black};
   color: ${color.white};
+
+  div.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    div {
+      height: 45px;
+      width: 80%;
+      display: inherit;
+      justify-content: center;
+      align-items: center;
+      background-color: ${color.white};
+      border-radius: 10px;
+      cursor: pointer;
+
+      i {
+        margin-right: 1rem;
+        color: ${color.black};
+      }
+
+      a {
+        text-decoration: none;
+        color: ${color.black};
+        font-family: ${font.family.secondary};
+      }
+    }
+  }
 `

@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 import { colors as color, fonts as font } from '../../style/variable'
 
-export const Header = styled.header`
+export const Header = styled.header<{ isScrolled: boolean }>`
   height: max-content;
   width: 100%;
   position: fixed;
   background-color: ${color.white};
   z-index: 1000;
+  transition: border-bottom 0.1s ease;
+  border-bottom: ${(props) =>
+    props.isScrolled ? `2px solid ${color.grayLight}` : 'none'};
 `
 
 export const HeaderTop = styled.div`
@@ -117,7 +120,7 @@ export const SearchContainer = styled.div`
   background-color: ${color.grayLight};
   padding: 8px 16px;
   border-radius: 22px;
-  width: 40%;
+  width: 35%;
 
   label {
     cursor: pointer;
