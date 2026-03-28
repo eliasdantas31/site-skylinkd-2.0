@@ -3,7 +3,7 @@ import { colors as color, fonts as font } from '../../../style/variable'
 
 export const Contact = styled.div`
   height: max-content;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   padding: 3rem 3rem;
@@ -12,6 +12,10 @@ export const Contact = styled.div`
   font-family: ${font.family.secondary};
   background-color: ${color.black};
   color: ${color.white};
+  position: relative;
+  z-index: 10;
+  margin-top: -6rem;
+  margin-bottom: 3rem;
 
   div.links {
     width: 100%;

@@ -28,7 +28,7 @@ const slideInFromLeft = keyframes`
 export const AvalitionsSectionContainer = styled.section`
   height: max-content;
   width: 100%;
-  padding: 5rem 5rem;
+  padding: 1rem 5rem 10rem 5rem;
   background-color: ${color.white};
   overflow: hidden;
 

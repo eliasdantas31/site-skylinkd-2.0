@@ -4,7 +4,7 @@ import { colors as color, fonts as font } from '../../../style/variable'
 export const ProductsSectionContainer = styled.section`
   height: max-content;
   width: 100%;
-  padding: 5rem 5rem;
+  padding: 5rem 5rem 1rem 5rem;
   margin-bottom: 0;
   background-color: ${color.white};
 `
