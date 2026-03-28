@@ -32,20 +32,14 @@ export const MainSectionComponent = () => {
         <img
           src="https://skylinkd-2-0-imagens.vercel.app/Bambu-Lab-Logo.webp"
           alt="Logo Bambu-Lab"
-          data-aos="fade-up"
-          data-aos-duration="500"
         />
         <img
           src="https://skylinkd-2-0-imagens.vercel.app/Voolt3D%20logo.png"
           alt="Logo Voolt3D"
-          data-aos="fade-up"
-          data-aos-duration="1000"
         />
         <img
           src="https://skylinkd-2-0-imagens.vercel.app/creality%20logo.webp"
           alt="Logo Creality"
-          data-aos="fade-up"
-          data-aos-duration="1500"
         />
       </MainScectionfooter>
     </MainSectionContainer>

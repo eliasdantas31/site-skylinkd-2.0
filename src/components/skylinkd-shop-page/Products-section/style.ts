@@ -2,10 +2,11 @@ import { styled } from 'styled-components'
 import { colors as color, fonts as font } from '../../../style/variable'
 
 export const ProductsSectionContainer = styled.section`
-  height: 100vh;
+  height: max-content;
   width: 100%;
-  padding: 5rem 5rem;
-  background-color: ${color.grayLight};
+  padding: 5rem 5rem 1rem 5rem;
+  margin-bottom: 0;
+  background-color: ${color.white};
 `
 
 export const ProductsSectionContent = styled.div<{ darkVersion: boolean }>`
@@ -18,7 +19,7 @@ export const ProductsSectionContent = styled.div<{ darkVersion: boolean }>`
   padding: 2rem 2rem;
   margin-bottom: 5rem;
   background-color: ${(props) =>
-    props.darkVersion ? color.black : color.white};
+    props.darkVersion ? color.black : color.grayLight};
   border-radius: 10px;
   gap: 3rem;
   cursor: pointer;

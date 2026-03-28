@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   Header,
   HeaderContainerShop,
@@ -8,9 +8,22 @@ import {
 
 const HeaderComponent = () => {
   const [headerTopOn, setHeaderTopOn] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <Header>
+    <Header isScrolled={isScrolled}>
       {headerTopOn && (
         <HeaderTop>
           <p>
@@ -70,3 +83,6 @@ const HeaderComponent = () => {
 }
 
 export default HeaderComponent
+function handleScroll(this: Window, _ev: Event) {
+  throw new Error('Function not implemented.')
+}
